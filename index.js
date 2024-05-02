@@ -1,7 +1,7 @@
 const fs = require("fs");
-const inquirer = require("Inquirer");
+const inquirer = require("inquirer");
 const path = require("path");
-const generatorMarkdown = require("./utils/generatorMarkdown");
+const generatorMarkdown = require("./markdowngenerator/generateMarkdown");
 
 // create an array of questions for user input
 const questions = [
@@ -18,22 +18,22 @@ const questions = [
     },
 
     {
-        type: "checkbox",
-        name: "license",
-        message: "Please select a license applicable to this project."
-        choices: ["MIT", "APACHE2.0", "Boost1.0", "MPL2.0", "BSD2", "BSD3", "none"],
-    },
-
-    {
         type: "input",
-        name: "require",
-        message: "List any project dependencies here."
+        name: "Sources",
+        message: "List any project sources here."
     },
-  
+    
     {
         type: "input",
         name: "usage",
-        message: "State the languages or technologies associated with this project."
+        message: "State the languages or technologies associated with this project, and provide instructions and examples for use."
+    },
+
+    {
+        type: "checkbox",
+        name: "license",
+        message: "Please select a license applicable to this project.",
+        choices: ["MIT", "APACHE2.0", "Boost1.0", "MPL2.0", "BSD2", "BSD3", "none"]
     },
 
     {
@@ -41,7 +41,7 @@ const questions = [
         name: "creator",
         message: "Write your GitHub username."
     },
-  
+
     {
         type: "input",
         name: "email",
@@ -53,20 +53,37 @@ const questions = [
         name: "contributors",
         message: "Please list any contributors (use GitHub usernames)."
     },
-  
+
     {
         type: "input",
         name: "test",
-        message: "Provide walkthrough of required tests if applicable."
+        message: "Provide walkthrough of the project functionality with screenshots."
     },
-    ]
+];
 
-    // writing README.md file
-    function init () {
-        inquirer.createPromptModule(questions).then((responses) => {
-            console.log("Creating Professional README.md File...");
-            writeToFile("./08-challenge-week9")
-        });
+// writing README.md file
+function init () {
+    inquirer.prompt(questions).then((responses) => {
+        console.log("Creating Professional README.md File...");
+        const markdown = generatorMarkdown(responses);
+        writeToFile("./08-challenge-week9/README.md", markdown);
+    });
+}
+
+function writeToFile(fileName, data) {
+    // Get the directory name from the file path
+    const directory = path.dirname(fileName);
+
+    // Create the directory if it does not exist
+    if (!fs.existsSync(directory)) {
+        fs.mkdirSync(directory, { recursive: true });
     }
 
-    init();
+    // Write the file
+    fs.writeFileSync(fileName, data);
+    console.log("README.md file created successfully!");
+}
+
+
+
+init();
