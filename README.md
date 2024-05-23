@@ -31,4 +31,6 @@ In conclusion, I:
 - you can then choose a license for the app from a list of options
 - you can enter your github user and email 
 
-Here is a link to the video walkthru: https://vimeo.com/user56387053 
+Here is a link to the video walkthru: https://vimeo.com/949382295 
+
+Here is a link to the GitHub: https://github.com/szolton/Readme-Generator/tree/main
