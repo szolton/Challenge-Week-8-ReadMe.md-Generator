@@ -44,18 +44,19 @@ ${data.Installation}
 ${data.usage}
 
 ## License
-This project is licensed under the ${license} license.
+This project is licensed under the ${license} license. [Learn more](${licenseBadgeURL})
 
 ## Creator
 GitHub: [${data.creator}](https://github.com/${data.creator})
+
+## Contributors
+${data.contributors}
 
 ## Tests
 ${data.test}
 
 ## Questions
 If you have any questions about the repo, please contact me at ${data.email}. You can also view more of my projects at [${data.creator}](https://github.com/${data.creator}).
-
-Contributors: ${data.contributors}
     `;
 }
 
