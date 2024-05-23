@@ -1,7 +1,7 @@
 const fs = require("fs");
 const inquirer = require("inquirer");
 const path = require("path");
-const generatorMarkdown = require("./markdowngenerator/generateMarkdown");
+const { generateMarkdown } = require("./markdowngenerator/generateMarkdown");
 
 // create an array of questions for user input
 const questions = [
@@ -57,10 +57,11 @@ const questions = [
 function init() {
     inquirer.prompt(questions).then((responses) => {
         console.log("Creating Professional README.md File...");
-        const markdown = generatorMarkdown(responses);
+        const markdown = generateMarkdown(responses); // Use generateMarkdown instead of generatorMarkdown
         writeToFile("./generatedOutput/README.md", markdown);
     });
 }
+
 
 function writeToFile(fileName, data) {
     // Get the directory name from the file path
