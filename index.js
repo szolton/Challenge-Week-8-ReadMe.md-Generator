@@ -10,50 +10,42 @@ const questions = [
         name: "title",
         message: "Please name your project."
     },
-
     {
         type: "input",
         name: "description",
         message: "Please describe the purpose and functionality of this project."
     },
-
     {
         type: "input",
         name: "Sources",
         message: "List any project sources here."
     },
-    
     {
         type: "input",
         name: "usage",
         message: "State the languages or technologies associated with this project, and provide instructions and examples for use."
     },
-
     {
         type: "checkbox",
         name: "license",
         message: "Please select a license applicable to this project.",
         choices: ["MIT", "APACHE2.0", "Boost1.0", "MPL2.0", "BSD2", "BSD3", "none"]
     },
-
     {
         type: "input",
         name: "creator",
         message: "Write your GitHub username."
     },
-
     {
         type: "input",
         name: "email",
         message: "Please provide a valid email address."
     },
-
     {
         type: "input",
         name: "contributors",
         message: "Please list any contributors (use GitHub usernames)."
     },
-
     {
         type: "input",
         name: "test",
@@ -66,7 +58,7 @@ function init () {
     inquirer.prompt(questions).then((responses) => {
         console.log("Creating Professional README.md File...");
         const markdown = generatorMarkdown(responses);
-        writeToFile("./08-challenge-week9/README.md", markdown);
+        writeToFile("./generatedOutput/README.md", markdown);
     });
 }
 
@@ -83,7 +75,5 @@ function writeToFile(fileName, data) {
     fs.writeFileSync(fileName, data);
     console.log("README.md file created successfully!");
 }
-
-
 
 init();
