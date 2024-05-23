@@ -10,6 +10,18 @@ These were some of my sources I used to follow the project: https://www.youtube.
 
 I began by making the questions and array in the index.js file, then using the generate markdown js that generates it.
 
+Here are some example screenshots of running node index.js
+
+![shows the questions](./Assets/Images/readme.png)
+
+And you can see the screenshot of a successfully generated readme here:
+
+![successful readme screenshot generated](./Assets/Images/readme-2.png)
+
+And you can see the screenshot of a successfully generated readme here:
+
+![successful readme screenshot generated](./Assets/Images/icon.png)
+
 In conclusion, I:
 - GIVEN a command-lne application that accepts user input 
 - WHEN I'm prompted for info about my app repo
