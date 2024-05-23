@@ -9,7 +9,8 @@ function renderLicenseBadge(license) {
     } else {
       return `[![${license} license](https://img.shields.io/badge/License-${license}-blue.svg)](${renderLicenseLink(license)})`
     }
-  }
+}
+
 
 // Returns the license link
 function renderLicenseLink(license) {
@@ -29,6 +30,7 @@ function renderLicenseLink(license) {
         return '';
     }
 }
+
 
 // Generate markdown function
 function generateMarkdown(data) {

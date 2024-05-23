@@ -1,7 +1,7 @@
 const fs = require("fs");
 const inquirer = require("inquirer");
 const path = require("path");
-const { generateMarkdown } = require("./markdowngenerator/generateMarkdown");
+const { generateMarkdown, renderLicenseBadge } = require("./markdowngenerator/generateMarkdown");
 
 // create an array of questions for user input
 const questions = [
@@ -61,7 +61,6 @@ function init() {
         writeToFile("./generatedOutput/README.md", markdown);
     });
 }
-
 
 function writeToFile(fileName, data) {
     // Get the directory name from the file path
