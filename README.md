@@ -33,4 +33,4 @@ In conclusion, I:
 
 Here is a link to the video walkthru: https://vimeo.com/949382295 
 
-Here is a link to the GitHub: https://github.com/szolton/Readme-Generator/tree/main
+Here is a link to the GitHub: https://github.com/szolton/Readme-Generator
