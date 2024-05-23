@@ -21,9 +21,9 @@ function generateMarkdown(data) {
 
     // Generate markdown here
     return `
-![License](${licenseBadgeURL})
-
 # ${data.title}
+
+![License](${licenseBadgeURL})
 
 ## Table of Contents
 - [Description](#description)
