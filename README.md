@@ -18,7 +18,7 @@ And you can see the screenshot of a successfully generated readme here:
 
 ![successful readme screenshot generated](./Assets/Images/readme-2.png)
 
-And you can see the screenshot of a successfully generated readme here:
+And you can see the screenshot of a successful license icon function:
 
 ![successful readme screenshot generated](./Assets/Images/icon.png)
 

@@ -1,7 +1,7 @@
 
-  # asd;fkl
+  # README Generator
   
-  [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+  
   
   ## Table of Contents
   - [Description](#description)
@@ -13,26 +13,26 @@
   - [Questions](#questions)
   
   ## Description
-  a;sdlkf
+  To save time and be efficient to make an automatic quality README.
   
   ## Installation
-  ;asldkf
+  inquirer, node.js
   
   ## Usage
-  asdkf
+  inquirer, vs code, github, node.js
   
   ## License
-  This project is licensed under the MIT license.
+  This project is licensed under the undefined license.
   
   ## Creator
-  GitHub: [a;sdkf](https://github.com/a;sdkf)
+  GitHub: [szolton](https://github.com/szolton)
   
   ## Contributors
-  asdkf
+  N/A
   
   ## Tests
-  asdfk;
+  ok!
   
   ## Questions
-  If you have any questions about the repo, please contact me at a;sdklf. You can also view more of my projects at [a;sdkf](https://github.com/a;sdkf).
+  If you have any questions about the repo, please contact me at szolton.designs@gmail.com. You can also view more of my projects at [szolton](https://github.com/szolton).
     
