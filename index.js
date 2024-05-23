@@ -17,8 +17,8 @@ const questions = [
     },
     {
         type: "input",
-        name: "Sources",
-        message: "List any project sources here."
+        name: "Installation",
+        message: "List anything you installed here."
     },
     {
         type: "input",
@@ -54,7 +54,7 @@ const questions = [
 ];
 
 // writing README.md file
-function init () {
+function init() {
     inquirer.prompt(questions).then((responses) => {
         console.log("Creating Professional README.md File...");
         const markdown = generatorMarkdown(responses);
